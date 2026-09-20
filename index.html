@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>UI Waves — AI for JavaScript</title>
+    <meta name="description"
+        content="UI Waves is an AI-powered JavaScript plugin for thoughtful, faster product experiences.">
+    <link rel="stylesheet" href="/Website/styles.css">
+</head>
+
+<body>
+    <div class="wave" aria-hidden="true"><svg viewBox="0 0 1400 600" preserveAspectRatio="none">
+            <path class="one" d="M-50 150 C250 20 380 330 700 150 S1120 30 1450 220" />
+            <path class="two" d="M-50 250 C230 120 430 430 720 240 S1140 90 1450 300" />
+            <path class="three" d="M-50 340 C220 240 420 520 760 330 S1130 190 1450 370" />
+        </svg></div>
+    <header class="site-header">
+        <a class="brand" href="/index.html"><span class="brand-mark">UW</span>
+            UI Waves</a><button class="menu-button" aria-label="Open navigation" aria-expanded="false">☰</button>
+        <nav class="nav"><a class="active" href="/Website/index.html">Home</a></nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div><span class="eyebrow">Talk to your UI. Make it happen.</span>
+                <h1>Build experiences without rebuilding the UI.
+                </h1>
+                <p class="lead">UI Waves is an intelligent JavaScript runtime that lets users interact with and
+                    transforms enterprise data using natural language.</p>
+                <div class="actions"><a class="button accent" href="/Website/getting-started.html">Start building
+                        →</a><a class="button secondary" href="/Website/about.html">Explore UI Waves</a></div>
+            </div>
+            <div class="hero-art">
+                <div class="orb"></div>
+                <div class="code-card">
+                    <div class="code-bar"><i class="code-dot"></i><i class="code-dot"></i><i class="code-dot"></i></div>
+                    <div class="code-body"><span class="kw">const</span> assistant = <span class="fn">window.UI
+                            Waves.init</span>({<br>&nbsp;&nbsp;target: <span class="str">'"#paymentsTable"'</span><br>
+                        });</div>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="section-head"><span class="eyebrow">Why UI Waves</span>
+                <h2>Less wiring. More intelligence.</h2>
+                <p class="muted">Enhance existing applications with context-aware interactions and dynamic experiences
+                    without changing your core application.</p>
+            </div>
+            <div class="grid-3">
+                <article class="feature-card">
+                    <div class="feature-number">01</div>
+                    <h3>Core runtime</h3>
+                    <p class="muted">Turn APIs into interactive enterprise experiences.</p>
+                </article>
+                <article class="feature-card">
+                    <div class="feature-number">02</div>
+                    <h3>Ship in minutes</h3>
+                    <p class="muted">One lightweight package, a few lines of configuration, and you are ready to go.</p>
+                </article>
+                <article class="feature-card">
+                    <div class="feature-number">03</div>
+                    <h3>Stay in control</h3>
+                    <p class="muted">Transparent APIs and thoughtful defaults keep your data and UX in your hands.</p>
+                </article>
+            </div>
+        </section>
+        <section class="section margin-top-3rem">
+            <div class="section-head"><span class="eyebrow">Why UI Waves</span>
+                <h2>Experience what you can do with UI Waves Bot</h2>
+                <p class="muted">Turn your existing APIs and UI into interactive, adaptable enterprise experiences
+                    without rebuilding from scratch.</p>
+                <p class="muted">Click UWBot to open the assistant. Drag it anywhere on the page, and click the button
+                    again to close it.</p>
+            </div>
+            <div class="grid-12">
+                <p>Try commands like: "Hide Status", "Sort by Amount descending", "Filter Amount greater than 10000".
+                </p>
+
+                <article class="table-parent">
+                    <table id="paymentsTable">
+                        <thead>
+                            <tr>
+                                <th>Bank</th>
+                                <th>Amount</th>
+                                <th>Status</th>
+                                <th>Date</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>ICICI</td>
+                                <td>120000</td>
+                                <td>Failed</td>
+                                <td>2026-08-01</td>
+                            </tr>
+                            <tr>
+                                <td>HDFC</td>
+                                <td>45000</td>
+                                <td>Success</td>
+                                <td>2026-08-03</td>
+                            </tr>
+                            <tr>
+                                <td>SBI</td>
+                                <td>98000</td>
+                                <td>Pending</td>
+                                <td>2026-08-02</td>
+                            </tr>
+                            <tr>
+                                <td>ICICI</td>
+                                <td>15000</td>
+                                <td>Success</td>
+                                <td>2026-08-02</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </article>
+            </div>
+
+            <div class="grid-12">
+                <article class="features-card">
+                    <h2>Key Features of the UI Waves runtime:</h2>
+                    <ul>
+                        <li>
+                            <strong>Framework Agnostic:</strong> Plain JavaScript runtime that integrates easily
+                            with React, Angular, Vue, VanillaJS, and existing web applications.
+                        </li>
+
+                        <li>
+                            <strong>API-Driven Data Experience:</strong> Connect an API and quickly create
+                            an interactive dynamic data workspace without rebuilding common data management features.
+                            <strong>Supports REST API to persist user state so that view can be restored across
+                                sessions.</strong>
+                        </li>
+
+                        <li>
+                            <strong>Zero Boilerplate:</strong> Reduce repetitive frontend development for
+                            tables, filtering, sorting, grouping, layouts shifts, and data interactions.
+                        </li>
+
+                        <li>
+                            <strong>Interactive Data Workspace:</strong> Work with the same data through
+                            multiple experiences such as Grid, Cards, Details, and Compare views.
+                        </li>
+
+                        <li>
+                            <strong>Context-Aware Assistant:</strong> Understands the current table, selected
+                            records, columns, filters, sorting, and active view before executing actions.
+                        </li>
+
+                        <li>
+                            <strong>Natural-Language Commands:</strong> Perform data and UI operations using
+                            simple commands such as <code>"hide column"</code>, <code>"group by status"</code>,
+                            <code>"Highlight ICICI rows with yellow color"</code>,
+                            <code>"Rename Status to Updated Status"</code>, <code>"Add $ before the Amount"</code>
+                        </li>
+
+                        <li>
+                            <strong>Smart Command Engine:</strong> Convert user commands into validated,
+                            deterministic runtime actions.
+                        </li>
+
+                        <li>
+                            <strong>Intent Validation:</strong> Validate commands and available operations
+                            before execution to prevent unintended changes.
+                        </li>
+
+                        <li>
+                            <strong>Quick Column Actions:</strong> Easily hide, show, group,
+                            freeze, and manage columns.
+                        </li>
+
+                        <li>
+                            <strong>Data Operations:</strong> Support filtering, sorting, grouping,
+                            pagination, searching, highlighting with preferred colors, and data transformations.
+                        </li>
+
+                        <li>
+                            <strong>Dynamic Views:</strong> Switch between Grid, Cards, Details, and
+                            Compare views without rebuilding the underlying data experience.
+                        </li>
+
+                        <li>
+                            <strong>Schema-Driven UI:</strong> Automatically understand API data types and
+                            generate appropriate presentation and interaction controls.
+                        </li>
+
+                        <li>
+                            <strong>CRUD Ready:</strong> Support configurable create, edit, delete, and
+                            duplicate operations using customer-provided APIs or callbacks.
+                        </li>
+
+                        <li>
+                            <strong>Server-Side Data Support:</strong> Designed for server-side pagination,
+                            sorting, filtering, grouping, and large datasets in paid plans.
+                        </li>
+
+                        <li>
+                            <strong>Undo & Redo:</strong> Quickly reverse or restore workspace and
+                            presentation changes.
+                        </li>
+
+                        <li>
+                            <strong>Command History:</strong> Track recent commands and repeat commonly
+                            used data operations.
+                        </li>
+
+                        <li>
+                            <strong>Draggable Assistant:</strong> Flexible assistant interface that can be
+                            positioned according to the application's layout.
+                        </li>
+
+                        <li>
+                            <strong>Prompt Suggestions:</strong> Provide ready-to-use prompts and quick
+                            actions to help users discover available capabilities.
+                        </li>
+
+                        <li>
+                            <strong>Visual Customization:</strong> Dynamically adjust density, formatting,
+                            highlighting, themes, and presentation based on user actions.
+                        </li>
+
+                        <li>
+                            <strong>Extensible Event Bus:</strong> Allow applications to listen to runtime
+                            events and extend or customize behavior.
+                        </li>
+
+                        <li>
+                            <strong>DOM Runtime Layer:</strong> Centralized DOM and presentation management
+                            for consistent and predictable UI transformations.
+                        </li>
+
+                        <li>
+                            <strong>Lightweight Integration:</strong> Designed to be added to an existing
+                            application with minimal configuration and without replacing the application's
+                            existing architecture.
+                        </li>
+
+                        <li>
+                            <strong>Multiple Build Formats:</strong>JS, ESM, UMD, and IIFE builds to support
+                            different application and deployment environments.
+                        </li>
+                    </ul>
+                </article>
+
+                <article class="features-card">
+                    <h2>Stay tuned for more features:</h2>
+                    <ul>
+                        <li>Pagination support for large datasets</li>
+                        <li>More cell level controls</li>
+                        <li>Image/Icon support</li>
+                        <li>Improved theme support</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer class="footer"><span>© 2026 UI Waves</span><span>Intelligence, thoughtfully embedded.</span></footer>
+    <script src="/Website/site.js"></script>
+    <!-- <script src="../tablebot/dist/uiwaves.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/uiwavesbot@0.3.1/dist/uiwaves.min.js"></script>
+    <script>
+        const instance = window.UIWaves.init({
+            target: "#paymentsTable",
+        });
+    </script>
+</body>
+
+
+
+
+
+</html>
